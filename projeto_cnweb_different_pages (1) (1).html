@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto CNWeb</title>
+    <style>
+        /* Estilos básicos para organização do layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fafafa;
+        }
+        .header, .footer {
+            background-color: #f1f1f1;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            width: 80%;
+            max-width: 1000px;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border: 1px solid #000;
+            background-color: #ccc;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover, .button:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        .image-placeholder {
+            width: 100%;
+            max-width: 500px;
+            height: 250px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #555;
+            font-size: 16px;
+        }
+        .text {
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .content {
+                width: 95%;
+            }
+            .buttons {
+                flex-direction: column;
+            }
+            .button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com botões clicáveis para páginas diferentes -->
+    <div class="header">
+        <div class="buttons">
+            <a href="pagina1.html" class="button">Botão 1</a>
+            <a href="pagina2.html" class="button">Botão 2</a>
+            <a href="pagina3.html" class="button">Botão 3</a>
+            <a href="pagina4.html" class="button">Botão 4</a>
+        
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <img src="images (2).png" alt="Computação em Nuvem"   width="600">
+        <div class="text">Texto explicativo sobre o conteúdo.<br>Texto adicional.<br>Mais informações aqui.</div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">Rodapé do Projeto CNWeb</div>
+
+</body>
+</html>
